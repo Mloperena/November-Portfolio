@@ -1,0 +1,277 @@
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 8rem;
+    /* space for the fixed GitHub header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+h1 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h2 {
+    font-weight: 600;
+    color: #8b949e;
+    padding-left: 0;
+    /* ensure perfect centering */
+}
+
+p {
+    font-weight: 400;
+    color: #c9d1d9;
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding: 20px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #161b22;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 6rem;
+    /* push image below the GitHub header */
+    margin-bottom: 2rem;
+    border: 3px solid #30363d;
+}
+
+.github-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.github-link {
+    text-decoration: none;
+    display: flex;
+}
+
+.github-icon {
+    fill: #c9d1d9;
+    transition: fill 0.2s ease;
+}
+
+.github-link:hover .github-icon {
+    fill: #58a6ff;
+}
+
+.github-text-link {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.hero {
+    width: 100%;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #0d1117, #1a2634);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.hero .tagline {
+    font-size: 1.2rem;
+    color: #8b949e;
+}
+
+/* Skill bars */
+.skill {
+    margin: 0.5rem 0;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #c9d1d9;
+}
+
+.skill .bar {
+    background: #30363d;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 8px;
+}
+
+.skill .bar div {
+    background: #58a6ff;
+    height: 100%;
+}
+
+/* Footer */
+.footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.footer .social-icon {
+    margin: 0 0.8rem;
+    fill: #c9d1d9;
+    transition: fill 0.2s;
+}
+
+.footer .social-icon:hover {
+    fill: #58a6ff;
+}
+
+/* Projects Section */
+.projects {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem 0;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 260px;
+    text-align: left;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.card p {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    color: #c9d1d9;
+}
+
+.project-link {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills-list li {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.contact a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding-top: 6rem;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        margin-top: 4rem;
+    }
+
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .skill .bar {
+        height: 6px;
+    }
+
+    .contact,
+    .skills,
+    .projects {
+        margin: 1rem 0;
+    }
+}
