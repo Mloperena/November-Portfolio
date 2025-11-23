@@ -23,6 +23,7 @@ p {
 h1 {
     font-weight: 700;
     color: #ffffff;
+    text-align: center;
 }
 
 h2 {
@@ -44,7 +45,7 @@ p {
     background-color: #161b22;
 }
 
-img {
+.profile-pic {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -53,6 +54,15 @@ img {
     /* push image below the GitHub header */
     margin-bottom: 2rem;
     border: 3px solid #30363d;
+}
+
+.screenshot {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border: 1px solid #30363d;
+    border-radius: 4px;
 }
 
 .github-container {
@@ -88,35 +98,6 @@ img {
 
 .hero {
     width: 100%;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, #0d1117, #1a2634);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.hero .tagline {
-    font-size: 1.2rem;
-    color: #8b949e;
-}
-
-/* Skill bars */
-.skill {
-    margin: 0.5rem 0;
-}
-
-.skill span {
-    display: block;
-    margin-bottom: 0.2rem;
-    color: #c9d1d9;
-}
-
-.skill .bar {
     background: #30363d;
     border-radius: 4px;
     overflow: hidden;
@@ -246,21 +227,6 @@ img {
         font-size: 2rem;
     }
 
-    .hero .tagline {
-        font-size: 1rem;
-    }
-
-    img {
-        width: 200px;
-        height: 200px;
-        margin-top: 4rem;
-    }
-
-    .project-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .card {
         width: 90%;
     }
@@ -274,4 +240,23 @@ img {
     .projects {
         margin: 1rem 0;
     }
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.screenshot {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border: 10px solid #30363d;
+    border-radius: 4px;
 }
